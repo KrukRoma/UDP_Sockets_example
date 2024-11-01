@@ -8,8 +8,8 @@ namespace np_sync_sockets
 {
     class Program
     {
-        static string address = "127.0.0.1"; 
-        static int port = 8080; 
+        static string address = "127.0.0.1";
+        static int port = 8080;
 
         static void Main(string[] args)
         {
