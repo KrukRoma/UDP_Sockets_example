@@ -21,7 +21,7 @@ namespace sync_client
 
                 while (message.ToLower() != "end")
                 {
-                    Console.Write("Введіть повідомлення: ");
+                    Console.Write("Введіть  повідомлення: ");
                     message = Console.ReadLine();
 
                     if (!string.IsNullOrEmpty(message))
@@ -33,11 +33,11 @@ namespace sync_client
                         data = client.Receive(ref remoteIpPoint);
                         string response = Encoding.UTF8.GetString(data);
 
-                        Console.WriteLine("Відповідь сервера: " + response);
+                        Console.WriteLine("Відповідь  сервера: " + response);
                     }
                     else
                     {
-                        Console.WriteLine("Будь ласка, введіть непусте повідомлення.");
+                        Console.WriteLine("Будь ласка,  введіть непусте повідомлення.");
                     }
                 }
 
